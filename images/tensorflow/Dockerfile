@@ -2,7 +2,7 @@ FROM cgr.dev/chainguard/wolfi-base
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-RUN apk update && apk add --no-cache python-3.12 openssh bash rsync findutils
+RUN apk update && apk add --no-cache python-3.12 openssh bash rsync findutils git
 
 ENV UV_NO_DEV=1
 
